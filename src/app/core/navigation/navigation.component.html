@@ -1,0 +1,14 @@
+<nav class="mt-4">
+  <p class="my-1 font-bold">Applications</p>
+  <ul class="flex flex-col gap-2">
+    <li *ngFor="let link of applicationsLinks">
+      <a
+        routerLink="{{ link.linkUrl }}"
+        routerLinkActive="underline underline-offset-4 decoration-2"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        {{ link.name }}
+      </a>
+    </li>
+  </ul>
+</nav>
