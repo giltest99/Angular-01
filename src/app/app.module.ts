@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { KonkatComponent } from './konkat/konkat.component';
 import { NotFoundComponent } from './core/not-found/not-found.component';
 import { TitleComponent } from './shared/title/title.component';
+import { NavigationComponent } from './core/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TitleComponent } from './shared/title/title.component';
     HomeComponent,
     KonkatComponent,
     NotFoundComponent,
-    TitleComponent
+    TitleComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
