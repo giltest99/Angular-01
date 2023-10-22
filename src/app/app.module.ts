@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { KonkatComponent } from './konkat/konkat.component';
 import { NotFoundComponent } from './core/not-found/not-found.component';
+import { TitleComponent } from './shared/title/title.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     KonkatComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
