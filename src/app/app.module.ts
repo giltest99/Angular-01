@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { KonkatComponent } from './konkat/konkat.component';
+import { NotFoundComponent } from './core/not-found/not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    KonkatComponent
+    KonkatComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
