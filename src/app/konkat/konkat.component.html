@@ -1,17 +1,33 @@
 <app-title [text]="'Konkat'"></app-title>
 <section class="flex flex-col gap-4 w-[98%]">
-  <div class="flex flex-row gap-4">
-    <p class="grow bg-slate-200">Boutons</p>
-    <p class="grow bg-red-200">Compteur</p>
-  </div>
-  <div class="flex flex-row gap-8 my-4">
+  <div class="flex flex-row gap-8">
     <div class="flex flex-col grow">
-      <!-- <label for="source">Source</label> -->
       <app-label [labelFor]="'source'" [labelText]="'Source'"></app-label>
       <textarea
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
         name="source"
       ></textarea>
+      <div class="flex justify-between px-2">
+        <div class="flex gap-2 mt-4">
+          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
+            Espace
+          </button>
+          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
+            Virgule
+          </button>
+          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
+            Simple
+          </button>
+          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
+            Double
+          </button>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <button class="bg-red-700 text-white font-bold px-4 py-1 rounded-lg">
+            Effacer
+          </button>
+        </div>
+      </div>
     </div>
 
     <div class="flex flex-col grow">
@@ -22,8 +38,9 @@
       ></textarea>
     </div>
   </div>
+
   <div>
-    <div class="flex flex-col">
+    <div class="flex flex-col mt-6">
       <app-label [labelFor]="'dest2'" [labelText]="'Destination 2'"></app-label>
       <textarea
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
