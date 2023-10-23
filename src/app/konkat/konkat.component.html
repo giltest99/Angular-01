@@ -4,8 +4,9 @@
     <div class="flex flex-col grow w-1/2">
       <app-label [labelFor]="'source'" [labelText]="'Source'"></app-label>
       <textarea
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
         name="source"
+        autofocus
       ></textarea>
       <div class="flex justify-between px-2">
         <div class="flex gap-2 mt-4">
@@ -22,12 +23,12 @@
           <app-button
             buttonText="Simple"
             (click)="message()"
-            [bgColor]="'blue'"
+            [bgColor]="'green'"
           ></app-button>
           <app-button
             buttonText="Double"
             (click)="message()"
-            [bgColor]="'blue'"
+            [bgColor]="'green'"
           ></app-button>
         </div>
         <div class="flex gap-2 mt-4">
@@ -43,7 +44,7 @@
     <div class="flex flex-col grow w-1/2">
       <app-label [labelFor]="'dest1'" [labelText]="'Destination 1'"></app-label>
       <textarea
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
         name="dest1"
       ></textarea>
     </div>
@@ -53,7 +54,7 @@
     <div class="flex flex-col mt-6">
       <app-label [labelFor]="'dest2'" [labelText]="'Destination 2'"></app-label>
       <textarea
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
         name="dest2"
       ></textarea>
     </div>
