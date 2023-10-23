@@ -9,6 +9,7 @@ import { NotFoundComponent } from './core/not-found/not-found.component';
 import { TitleComponent } from './shared/title/title.component';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { LabelComponent } from './shared/label/label.component';
+import { ButtonComponent } from './shared/button/button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LabelComponent } from './shared/label/label.component';
     NotFoundComponent,
     TitleComponent,
     NavigationComponent,
-    LabelComponent
+    LabelComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
