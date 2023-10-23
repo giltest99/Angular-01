@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class KonkatComponent {
   message() {
-    alert('Hello');
+    alert(`Hello`);
   }
 }
