@@ -1,17 +1,30 @@
 <app-title [text]="'Konkat'"></app-title>
-<section class="flex flex-col gap-4">
+<section class="flex flex-col gap-4 w-[98%]">
   <div class="flex flex-row gap-4">
     <p class="grow bg-slate-200">Boutons</p>
     <p class="grow bg-red-200">Compteur</p>
   </div>
   <div class="flex flex-row gap-8 my-4">
-    <textarea class="grow">Ta source</textarea>
+    <div class="flex flex-col grow">
+      <label for="source">Source</label>
+      <textarea
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+      ></textarea>
+    </div>
 
-    <textarea class="grow">Ta dest</textarea>
+    <div class="flex flex-col grow">
+      <label for="destination">Destination</label>
+      <textarea
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+      ></textarea>
+    </div>
   </div>
   <div>
-    <div>
-      <textarea class="">Ta dest</textarea>
+    <div class="flex flex-col">
+      <label for="destination">Destination</label>
+      <textarea
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+      ></textarea>
     </div>
   </div>
 </section>
