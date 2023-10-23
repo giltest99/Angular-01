@@ -9,27 +9,32 @@
       ></textarea>
       <div class="flex justify-between px-2">
         <div class="flex gap-2 mt-4">
-          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
-            Espace
-          </button>
-          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
-            Virgule
-          </button>
-          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
-            Simple
-          </button>
-          <button class="bg-blue-700 text-white font-bold px-4 py-1 rounded-lg">
-            Double
-          </button>
-        </div>
-        <div class="flex gap-2 mt-4">
-          <button class="bg-red-700 text-white font-bold px-4 py-1 rounded-lg">
-            Effacer
-          </button>
           <app-button
-            buttonText="My button"
+            buttonText="Espace"
             (click)="message()"
             [bgColor]="'blue'"
+          ></app-button>
+          <app-button
+            buttonText="Virgule"
+            (click)="message()"
+            [bgColor]="'blue'"
+          ></app-button>
+          <app-button
+            buttonText="Simple"
+            (click)="message()"
+            [bgColor]="'blue'"
+          ></app-button>
+          <app-button
+            buttonText="Double"
+            (click)="message()"
+            [bgColor]="'blue'"
+          ></app-button>
+        </div>
+        <div class="flex gap-2 mt-4">
+          <app-button
+            buttonText="Effacer"
+            (click)="message()"
+            [bgColor]="'red'"
           ></app-button>
         </div>
       </div>
