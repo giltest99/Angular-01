@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class LabelComponent {
   @Input() labelText: string = '';
   @Input() labelFor: string = '';
+  @Input() btnClick!: Function;
 }
