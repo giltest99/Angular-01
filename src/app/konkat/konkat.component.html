@@ -6,24 +6,28 @@
   </div>
   <div class="flex flex-row gap-8 my-4">
     <div class="flex flex-col grow">
-      <label for="source">Source</label>
+      <!-- <label for="source">Source</label> -->
+      <app-label [labelFor]="'source'" [labelText]="'Source'"></app-label>
       <textarea
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        name="source"
       ></textarea>
     </div>
 
     <div class="flex flex-col grow">
-      <label for="destination">Destination</label>
+      <app-label [labelFor]="'dest1'" [labelText]="'Destination 1'"></app-label>
       <textarea
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        name="dest1"
       ></textarea>
     </div>
   </div>
   <div>
     <div class="flex flex-col">
-      <label for="destination">Destination</label>
+      <app-label [labelFor]="'dest2'" [labelText]="'Destination 2'"></app-label>
       <textarea
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none"
+        name="dest2"
       ></textarea>
     </div>
   </div>
