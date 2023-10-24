@@ -30,8 +30,13 @@ export class KonkatComponent {
     this.outputData1 = res;
     this.numberOfValues = len;
   }
-}
 
+  resetAllTextareas() {
+    this.inputData = '';
+    this.outputData1 = '';
+    this.numberOfValues = 0;
+  }
+}
 
 // Fonction from gf-project
 /* onlyColumn() {
