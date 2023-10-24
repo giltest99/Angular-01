@@ -11,13 +11,16 @@
       ></textarea>
       <div class="flex justify-between px-2">
         <div class="flex gap-2 mt-4">
-          <app-button buttonText="Espace" (click)="message()"></app-button>
+          <app-button buttonText="Espace" (click)="columnOnly()"></app-button>
           <app-button buttonText="Virgule" (click)="commasOnly()"></app-button>
-          <app-button buttonText="Simple" (click)="message()"></app-button>
-          <app-button buttonText="Double" (click)="message()"></app-button>
+          <app-button buttonText="Simple" (click)="simpleQuotes()"></app-button>
+          <app-button buttonText="Double" (click)="doubleQuotes()"></app-button>
         </div>
         <div class="flex gap-2 mt-4">
-          <app-button buttonText="Effacer" (click)="resetAllTextareas()"></app-button>
+          <app-button
+            buttonText="Effacer"
+            (click)="resetAllTextareas()"
+          ></app-button>
         </div>
       </div>
     </div>

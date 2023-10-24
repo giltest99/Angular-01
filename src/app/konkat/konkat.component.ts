@@ -15,6 +15,22 @@ export class KonkatComponent {
     alert(`Hello`);
   }
 
+  columnOnly() {
+    if (!this.inputData) return;
+    const values = this.inputData.trim().split('\n');
+    let res = '';
+    let len = 0;
+    for (let item of values) {
+      if (item.trim() !== '') {
+        res += `${item}\n`;
+        len++;
+      }
+    }
+    res = res.slice(0, -1);
+    this.outputData1 = res;
+    this.numberOfValues = len;
+  }
+
   commasOnly() {
     if (!this.inputData) return;
     const values = this.inputData.trim().split('\n');
@@ -23,6 +39,37 @@ export class KonkatComponent {
     for (let item of values) {
       if (item.trim() !== '') {
         res += `${item},`;
+        len++;
+      }
+    }
+    res = res.slice(0, -1);
+    this.outputData1 = res;
+    this.numberOfValues = len;
+  }
+  simpleQuotes() {
+    if (!this.inputData) return;
+    const values = this.inputData.trim().split('\n');
+    let res = '';
+    let len = 0;
+    for (let item of values) {
+      if (item.trim() !== '') {
+        res += `'${item}',`;
+        len++;
+      }
+    }
+    res = res.slice(0, -1);
+    this.outputData1 = res;
+    this.numberOfValues = len;
+  }
+
+  doubleQuotes() {
+    if (!this.inputData) return;
+    const values = this.inputData.trim().split('\n');
+    let res = '';
+    let len = 0;
+    for (let item of values) {
+      if (item.trim() !== '') {
+        res += `"${item}",`;
         len++;
       }
     }
