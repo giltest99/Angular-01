@@ -58,6 +58,7 @@ export class KonkatComponent {
     }
     res = res.slice(0, -1);
     this.outputData1 = res;
+    this.outputData2 = res;
     this.numberOfValues = len;
   }
   simpleQuotes() {
@@ -95,22 +96,7 @@ export class KonkatComponent {
   resetAllTextareas() {
     this.inputData = '';
     this.outputData1 = '';
+    this.outputData2 = '';
     this.numberOfValues = 0;
   }
 }
-
-// Fonction from gf-project
-/* onlyColumn() {
-  if (!this.inputData) return;
-  let values = this.inputData.trim().split('\n');
-  let res = '';
-  let len = 0;
-  for (let item of values) {
-    if (item.trim() !== '') {
-      res += `${item}\n`;
-      len++;
-    }
-  }
-  this.outputData = res;
-  this.numberOfValues = len;
-} */
