@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -11,9 +11,12 @@ export class ButtonComponent {
   @Input() fgColor: string = '';
   @Input() onclick!: () => void;
 
+
+
   handleClick() {
     if (this.onclick) {
       this.onclick();
     }
   }
+
 }

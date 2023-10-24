@@ -10,33 +10,13 @@
       ></textarea>
       <div class="flex justify-between px-2">
         <div class="flex gap-2 mt-4">
-          <app-button
-            buttonText="Espace"
-            (click)="message()"
-            [bgColor]="'blue'"
-          ></app-button>
-          <app-button
-            buttonText="Virgule"
-            (click)="message()"
-            [bgColor]="'blue'"
-          ></app-button>
-          <app-button
-            buttonText="Simple"
-            (click)="message()"
-            [bgColor]="'green'"
-          ></app-button>
-          <app-button
-            buttonText="Double"
-            (click)="message()"
-            [bgColor]="'green'"
-          ></app-button>
+          <app-button buttonText="Espace" (click)="message()"></app-button>
+          <app-button buttonText="Virgule" (click)="message()"></app-button>
+          <app-button buttonText="Simple" (click)="message()"></app-button>
+          <app-button buttonText="Double" (click)="message()"></app-button>
         </div>
         <div class="flex gap-2 mt-4">
-          <app-button
-            buttonText="Effacer"
-            (click)="message()"
-            [bgColor]="'red'"
-          ></app-button>
+          <app-button buttonText="Effacer" (click)="message()"></app-button>
         </div>
       </div>
     </div>
