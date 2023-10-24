@@ -2,16 +2,20 @@
 <section class="flex flex-col gap-4">
   <div class="flex flex-row gap-8">
     <div class="flex flex-col grow w-1/2">
-      <app-label [labelFor]="'source'" [labelText]="'Source'"></app-label>
+      <app-label
+        [labelFor]="'source'"
+        [labelText]="'Source'"
+        class="pl-4"
+      ></app-label>
       <textarea
         #textareaInputData
         [(ngModel)]="inputData"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-2xl resize-none outline-none focus:border-2 focus:border-slate-500 shadow"
         name="source"
         autofocus
       ></textarea>
-      <div class="flex justify-between px-2">
-        <div class="flex gap-2 mt-4">
+      <div class="flex justify-between">
+        <div class="flex gap-2 mt-4 px-4">
           <app-button
             buttonText="Espace"
             (click)="columnOnly()"
@@ -33,7 +37,7 @@
             class="bg-blue-700 hover:bg-blue-800 duration-200 text-white font-bold px-4 py-1 rounded-lg"
           ></app-button>
         </div>
-        <div class="flex gap-2 mt-4">
+        <div class="flex gap-2 mt-4 px-4">
           <app-button
             buttonText="Effacer"
             (click)="resetAllTextareas()"
@@ -44,14 +48,18 @@
     </div>
 
     <div class="flex flex-col grow w-1/2">
-      <app-label [labelFor]="'dest1'" [labelText]="'Destination 1'"></app-label>
+      <app-label
+        [labelFor]="'dest1'"
+        [labelText]="'Destination 1'"
+        class="pl-4"
+      ></app-label>
       <textarea
         #textareaElement
         [value]="outputData1"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-2xl resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
         name="dest1"
       ></textarea>
-      <div class="text-right flex justify-between mt-4">
+      <div class="text-right flex justify-between mt-4 px-4">
         <span class="px-2 font-bold text-xl"> {{ numberOfValues }} </span>
         <app-button
           buttonText="Copier"
@@ -64,10 +72,14 @@
 
   <div>
     <div class="flex flex-col mt-6">
-      <app-label [labelFor]="'dest2'" [labelText]="'Destination 2'"></app-label>
+      <app-label
+        [labelFor]="'dest2'"
+        [labelText]="'Destination 2'"
+        class="pl-4"
+      ></app-label>
       <textarea
         [value]="outputData2"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-2xl resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
         name="dest2"
       ></textarea>
     </div>
