@@ -45,12 +45,18 @@
     <div class="flex flex-col grow w-1/2">
       <app-label [labelFor]="'dest1'" [labelText]="'Destination 1'"></app-label>
       <textarea
+        #textareaElement
         [value]="outputData1"
         class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
         name="dest1"
       ></textarea>
-      <div class="text-right font-bold text-xl p-2">
+      <div class="text-right font-bold text-xl p-2 flex justify-between">
         <span class="px-2"> {{ numberOfValues }} </span>
+        <app-button
+          buttonText="Sélection"
+          (click)="selectText()"
+          class="bg-red-700 hover:bg-red-800 duration-200 text-white font-bold px-4 py-1 rounded-lg"
+        ></app-button>
       </div>
     </div>
   </div>

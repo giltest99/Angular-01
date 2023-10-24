@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-konkat',
@@ -11,8 +11,22 @@ export class KonkatComponent {
   outputData2: string = '';
   numberOfValues: number = 0;
 
+  @ViewChild('textareaElement') textareaElement!: ElementRef;
+
   message() {
     alert(`Hello`);
+  }
+
+  selectText() {
+    const textarea = this.textareaElement.nativeElement;
+    textarea.select();
+    this.copyText();
+  }
+
+  copyText() {
+    const textarea = this.textareaElement.nativeElement;
+    textarea.select();
+    document.execCommand('copy');
   }
 
   columnOnly() {
