@@ -11,12 +11,9 @@ export class ButtonComponent {
   @Input() fgColor: string = '';
   @Input() onclick!: () => void;
 
-
-
   handleClick() {
     if (this.onclick) {
       this.onclick();
     }
   }
-
 }
