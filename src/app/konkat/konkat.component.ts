@@ -12,6 +12,7 @@ export class KonkatComponent {
   numberOfValues: number = 0;
 
   @ViewChild('textareaElement') textareaElement!: ElementRef;
+  @ViewChild('textareaInputData') textareaInputData!: ElementRef;
 
   message() {
     alert(`Hello`);
@@ -98,5 +99,7 @@ export class KonkatComponent {
     this.outputData1 = '';
     this.outputData2 = '';
     this.numberOfValues = 0;
+    const textarea = this.textareaInputData.nativeElement;
+    textarea.focus();
   }
 }

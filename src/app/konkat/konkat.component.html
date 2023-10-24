@@ -4,8 +4,9 @@
     <div class="flex flex-col grow w-1/2">
       <app-label [labelFor]="'source'" [labelText]="'Source'"></app-label>
       <textarea
+        #textareaInputData
         [(ngModel)]="inputData"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow"
         name="source"
         autofocus
       ></textarea>
@@ -47,7 +48,7 @@
       <textarea
         #textareaElement
         [value]="outputData1"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
         name="dest1"
       ></textarea>
       <div class="text-right flex justify-between mt-4">
@@ -66,7 +67,7 @@
       <app-label [labelFor]="'dest2'" [labelText]="'Destination 2'"></app-label>
       <textarea
         [value]="outputData2"
-        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 selection:text-red-600"
+        class="border border-slate-300 p-2 min-h-[300px] rounded-lg resize-none outline-none focus:border-2 focus:border-slate-500 shadow selection:bg-[yellow]"
         name="dest2"
       ></textarea>
     </div>

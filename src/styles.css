@@ -6,7 +6,7 @@
   html {
     font-family: "Roboto", system-ui, sans-serif;
   }
-  ::selection {
+  /* ::selection {
     background: yellow;
-  }
+  } */
 }
