@@ -59,7 +59,7 @@ export class KonkatComponent {
     }
     res = res.slice(0, -1);
     this.outputData1 = res;
-    this.outputData2 = res;
+    //this.outputData2 = res;
     this.numberOfValues = len;
   }
   simpleQuotes() {
